@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com Chromakey</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" autoplay loop muted>
+        <source src="https://cdn.jsdelivr.net/gh/Jonquishot/Dragon/Dragon.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script>
+        const video = document.getElementById('video');
+
+        // Aqui você pode aplicar JavaScript para tentar remover o fundo verde se necessário
+        // Uma abordagem mais avançada envolveria usar WebGL ou WebRTC para aplicar o filtro de chromakey
+        // Isso, porém, exigiria bibliotecas adicionais ou backend para processar o vídeo.
+    </script>
+</body>
+</html>
